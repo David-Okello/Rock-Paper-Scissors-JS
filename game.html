@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="./game.css" />
+  <script src="./game.js"></script>
+</head>
+
+
+<body>
+  <div class="zote">
+    <h1 style="color: green;">Rock Paper Scissors</h1>
+    <span style="color: green;">If terminal logs get too long refresh the page</span>
+    <div class="zote2">
+
+        <div id="game-container">
+
+            <div class="choice-container" id="rock" data-choice="rock">
+            <div class="emoji">🪨</div>
+            <div class="text">Rock</div>
+            </div>
+
+            <div class="choice-container" id="paper" data-choice="paper">
+            <div class="emoji">📄</div>
+            <div class="text">Paper</div>
+            </div>
+
+            <div class="choice-container" id="scissors" data-choice="scissors">
+            <div class="emoji">✂️</div>
+            <div class="text">Scissors</div>
+            </div>
+        </div>
+
+        <div class="result">Make your choice!</div>
+
+        <pre id="editor" class="after-result" contenteditable="true"></pre>
+    </div>
+
+        <div class="btn-divy">
+            <button id="reset-button">Reset Score</button>
+        </div>
+  </div>
+
+  
+</body>
+
+</html>
