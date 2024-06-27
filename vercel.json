@@ -1,18 +1,24 @@
 {
   "version": 2,
+  "public": true,
   "builds": [
     {
-      "src": "game.html",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "public"
-      }
+      "src": "public/game.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "public/game.css",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
     {
-      "src": "/(.*)",
-      "dest": "/game.html"
+      "src": "/",
+      "dest": "/public/game.html"
+    },
+    {
+      "src": "/game.css",
+      "dest": "/public/game.css"
     }
   ]
 }
