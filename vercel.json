@@ -9,6 +9,10 @@
     {
       "src": "public/game.css",
       "use": "@vercel/static"
+    },
+    {
+      "src": "public/game.js",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
@@ -19,6 +23,10 @@
     {
       "src": "/game.css",
       "dest": "/public/game.css"
+    },
+    {
+      "src": "/game.js",
+      "dest": "/public/game.js"
     }
   ]
 }
