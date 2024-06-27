@@ -1,0 +1,155 @@
+#reset-button{
+    color: green;
+    background-color: #1e1e1e;
+    padding: 5px;
+    margin: 15px;
+}
+
+.btn-divy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background: #0a0a0a;
+}
+
+.zote{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.zote2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#game-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 300px;
+  width: 100%;
+  padding: 30px;
+  padding-right: 45px;
+  background: #1e1e1e;
+  border-radius: 15px;
+  margin: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.choice-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.choice-container:hover {
+  transform: scale(1.1);
+}
+
+.emoji {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.text {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.result {
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  margin: 20px;
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25%, 75% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+}
+
+.shake {
+  animation: shake 0.5s ease-in-out;
+}
+
+.after-result {
+  background-color: #000;
+  color: #00ff00;
+  margin-top: 20px;
+  display: flex;
+  font-family: 'Courier New', monospace;
+  padding: 20px;
+  overflow: hidden;
+  white-space: pre-wrap;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+#editor {
+    background-color: #000;
+    border: 1px solid #00ff00;
+    border-radius: 5px;
+    padding: 20px;
+    overflow: hidden;
+    white-space: pre-wrap;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-top: 20px;
+    /* Updated styles for moving to the right */
+    margin-left: auto;
+  }
+  
+  @keyframes typing {
+    0%, 100% {
+      border-left: 2px solid transparent;
+      border-right: 2px solid #00ff00;
+    }
+    50% {
+      border-left: 2px solid #00ff00;
+      border-right: 2px solid transparent;
+    }
+  }
+  
+  #editor::after {
+    content: '';
+    border-left: 2px solid #00ff00;
+    border-right: 2px solid transparent;
+    animation: typing 1.2s steps(30) infinite;
+    display: inline-block;
+    align-content: flex-start;
+    margin-left: -3px;
+    font-size: 1.2em;
+    color: #00ff00;
+    position: absolute;
+    bottom: 10px;
+  }
+  
